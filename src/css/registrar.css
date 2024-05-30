@@ -1,0 +1,124 @@
+body{
+  margin: 0;
+}
+.header{
+  background-color: #282023;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+}
+.header__img {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: auto;
+  height: 55px;
+}
+.register{
+  font-family: 'Muli', sans-serif;
+  background: linear-gradient(#282023, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+.register__container{
+  font-family: 'Muli', sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 620px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.register__container--form{
+  display: flex;
+  flex-direction: column;
+}
+.register__container--form label{
+  font-size: 14px;
+}
+.register__container--iniciar{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 80px;
+  text-decoration: none;
+}
+.register__container--iniciar a{
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+.register__container--iniciar:hover{
+  text-decoration: underline;
+}
+.input{
+  background-color: transparent;
+  height: 50px;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  outline: none; /*quitar borde azul alrededor al seleccionar*/
+}
+::placeholder{
+  color: white;
+}
+.button{
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: 'Muli', sans-serif;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+.footer{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px){
+  .register__container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+  .footer{
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
